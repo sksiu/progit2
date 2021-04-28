@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - ben
+  labels:
+  - dependabot
+  ignore:
+  - dependency-name: asciidoctor
+    versions:
+    - 2.0.12
+    - 2.0.13
+    - 2.0.14
